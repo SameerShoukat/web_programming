@@ -1,0 +1,197 @@
+html{
+    overscroll-behavior: smooth;
+}
+
+#head{
+    background-color: #6fbf3d;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  
+
+    
+}
+.container{
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    margin-left: 200px;
+    text-transform:uppercase;
+    display: block;
+
+    
+}
+
+.btn {
+    float: right;
+    margin-right: 500px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+.fa{
+    color:white;
+    text-decoration: none;
+    size: large;
+    margin: 0 10px;
+    font-size: 30px;
+    
+
+}
+#logo{
+    margin-top: 10px;
+    width :160px;
+    height:140px;
+    float: left;
+    
+}
+#container1{
+    float: right;
+    width: 40%;
+    margin-right: 15%;
+    height: 50px;
+    margin-top: 30px;
+}
+#container1 li{
+    display: inline;
+    list-style: none;
+    padding: 0 15px;
+    font-size: 20px;
+
+}
+.li-btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.li-btn:hover{
+background-color: #b3bab7;
+color:white;
+
+}
+.li-btn a{
+    text-decoration: none;
+    color:white;
+}
+.li-btn1{
+    background-color: #b3bab7;
+    border: none;
+    color: white;
+    padding: 15px 32px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.li-btn1 a{
+    text-decoration: none;
+    color:white;
+}
+#home{
+    width: 80%;
+    height:auto;
+    display: inline-block;
+    padding:10px;
+    margin: 5%;
+    margin-left: 10%;
+    font-size: large;
+}
+#about-us{
+    width: 80%;
+    height:auto;
+    padding:10px;
+    margin: 5%;
+    margin-left: 10%;
+}
+#about-us table,th,td{
+    padding: 0 25px;
+    text-align: left;
+    font-size:20px ;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    padding: 5px;
+  
+}
+#about-us table{
+    margin: auto;
+
+
+
+}
+#about-us tr{
+    border: solid;
+    border-width: 1px 0;
+}
+#about-us h2{
+    text-align: center;
+    size: 25px;
+    font-family: 'Segoe UI';
+}
+marquee{
+    width: 64%;
+    margin-left: 17%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+#image{
+   margin-top: 10%;
+   margin-left: 17%;
+}
+#home p{
+    font-size: large;
+    color: black;
+}
+#contact{
+    width:100%;
+    display: inline-block;
+    padding:10px;
+}
+#contact label{
+    display: block;
+    font-size: large;
+    padding: 5px;
+    font-family: 'Segoe UI';
+    margin-left: 20%;
+}
+#contact input{
+    width: 30%;
+    height:50px;
+    margin-left: 20%;
+}
+#contact textarea{
+    width: 30%;
+    height: 10%;
+    margin-left: 20%;
+}
+#contact button{
+    background-color: #b3bab7;
+    border: none;
+    color: white;
+    padding: 15px 32px ;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 20%;
+}
+footer{
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+    background-color: #4CAF50; 
+    color: white;
+}
+ 
+
+
+
+
+
+
+
