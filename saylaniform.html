@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-family: Arial;
+            scroll-behavior: smooth;
+        }
+        /*Head*/
+        h1{
+            text-decoration: underline;
+            color: #8803fc;
+            text-align: center;
+        }
+        #logo{
+            margin-left: 280px;
+        }
+        /*Form*/
+        form{
+            background-color: #8803fc;
+            padding: 10px;
+            color: white;
+            height: auto;
+            }
+           label{
+            width:150px;
+            display: inline-block;
+            float: left;
+            }
+            #btns{
+                float: left;
+                margin-left: 400px;
+
+            }
+           </style>
+</head>
+<body>
+    <Div id="head"> 
+        <img src="images/1.png" alt="Saylani Logo " id="logo">
+        <h1> STUDENT REGISTRATION FORM</h1>
+    </Div>
+    <form action="" method="POST">
+        <Div id="main">
+        <p> 
+            <label for="first-name">FIRST NAME</label> 
+            <input type="text" maxlength="30" size="15" id="first-name" placeholder=" Enter First Name" required>
+        </p>
+        <p> 
+            <label for="last-name">LAST NAME</label> 
+            <input type="text" maxlength="30" size="15" id="last-name" placeholder=" Enter Last Name" required >
+        </p>
+
+        <p> 
+           <label for="day">DOB</label>
+            <select id="day" required>
+                <option> Day</option>
+                <option> 01</option>
+                <option> 02</option>
+                <option> 03</option>
+                <option> 04</option>
+                <option> 05</option>
+                <option> 06</option>
+                <option> 07</option>
+                <option> 08</option>
+                <option> 09</option>
+                <option> 10</option>
+                <option> 11</option>
+                <option> 12</option>
+                <option> 13</option>
+                <option> 14</option>
+                <option> 15</option>
+                <option> 16</option>
+                <option> 17</option>
+                <option> 18</option>
+                <option> 19</option>
+                <option> 20</option>
+                <option> 21</option>
+                <option> 22</option>
+                <option> 23</option>
+                <option> 24</option>
+                <option> 25</option>
+                <option> 26</option>
+                <option> 27</option>
+                <option> 28</option>
+                <option> 29</option>
+                <option> 30</option>
+                <option> 31</option>
+            </select>
+            <select id="mon" required>
+                <option> Month</option>
+                <option> Janaury</option>
+                <option> Febuary</option>
+                <option> March</option>
+                <option> April</option>
+                <option> May</option>
+                <option> June</option>
+                <option> July</option>
+                <option> August</option>
+                <option> September</option>
+                <option> October</option>
+                <option> November</option>
+                <option> December</option>
+            </select>
+            <select id="year" required>
+                <option> Year</option>
+                <option> 1990</option>
+                <option> 1991</option>
+                <option> 1992</option>
+                <option> 1993</option>
+                <option> 1994</option>
+                <option> 1995</option>
+                <option> 1996</option>
+                <option> 1997</option>
+                <option> 1998</option>
+                <option> 1999</option>
+                <option> 2000</option>
+                <option> 2001</option>
+                <option> 2002</option>
+            </select>
+        </p>
+
+        <p> 
+            <label for="email-id">Email Id</label> 
+            <input type="text" size="15" id="email-id" >
+        </p>
+        <p> 
+            <label for="mobile-number">Mobile Number</label>
+            <input type="text" size="15" id="mobile-number" maxlength="10" >
+        </p>
+        <p> 
+            <label for="gender">Gender</label>
+             Male
+            <input type="radio" name="gender">
+            Female
+            <input type="radio" name="gender" >
+          
+        <p>
+            <label for="address" class="lbl"> ADDRESS</label>
+            <textarea id="address"></textarea>
+        </p>
+       <p>
+           <label for="city"> CITY</label>
+           <input type="text" maxlength="30" size="15" id="city" required >
+
+       </p>
+       <p>
+            <label for="pin-code"> PIN CODE</label>
+            <input type="number" maxlength="6" size="15" id="pin-code" required >
+        </p>
+        <p>
+            <label for="state"> STATE</label>
+            <input type="text" maxlength="30" size="15" id="state" required >
+        </p>
+        <p>
+            <label for="country"> COUNTRY</label>
+            <input type="text" maxlength="30" size="15" id="country" required >
+        </p>
+        <p >
+            <label for="hobbies"> HOBBIES</label>
+            <div id="hobbies">
+            <input type="checkbox" id="hobbies" name="hobbies1">
+             <b> Drawing</b> 
+            <input type="checkbox" id="hobbies" name="hobbies2">
+            <b> Sniping </b> 
+            <input type="checkbox" id="hobbies" name="hobbies3">
+            <b>Dancing</b>
+            <input type="checkbox" id="hobbies" name="hobbies4">
+            <b>Sketching</b><br>
+            <label for="hobbies">.</label>
+            <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies5">
+            <b>Others</b>
+            <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies6">
+            <input type="text" size="15" name="hobbies6">
+        </div>
+        </p>
+        <p>
+            <label for="qualification"> QUALIFICATION</label>
+            <table>
+                <tr>
+                <th>SI.NO</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year Of Passing</th>
+            </tr>
+            <tr>
+                <td> 1</td>
+                <td> Class X</td>
+                <td> <input type="text" size="15" maxlength="10"></td>
+                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td> <input type="text" size="15"></td>
+            </tr>
+            <tr>
+                <td> 2</td>
+                <td> Class XII</td>
+                <td> <input type="text" size="15" maxlength="10"></td>
+                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td> <input type="text" size="15"></td>
+            </tr>
+            <tr>
+                <td> 3</td>
+                <td> Graduation</td>
+                <td> <input type="text" size="15" maxlength="10"></td>
+                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td> <input type="text" size="15"></td>
+            </tr>
+            <tr>
+                <td> 2</td>
+                <td> Masters</td>
+                <td> <input type="text" size="15" maxlength="10"></td>
+                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td> <input type="text" size="15"></td>
+            </tr>
+        </table>
+        </p>
+        <p>
+            <label for="applied-for"> COURSES APPLIED FOR</label>
+            <B>BCA</B>
+            <input type="radio" name="appiled-for">
+            <B>BCOM</B>
+            <input type="radio" name="appiled-for">
+            <B>BSC</B>
+            <input type="radio" name="appiled-for">
+            <B>BA</B>
+            <input type="radio" name="appiled-for">
+        </p>
+        <div id="btns">
+            <button type="submit" id="submit"> Submit</button>
+            <button type="submit" id="reset"> Reset</button>
+        </div>
+    </Div>
+    </form>
+</body>
+</html>
