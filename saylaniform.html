@@ -29,7 +29,7 @@
             width:150px;
             display: inline-block;
             float: left;
-            }
+         }
         #btns{
             float: left;
             margin-left: 300px;
@@ -47,6 +47,9 @@
                 margin: 4px 2px;
                 cursor: pointer;
                 border-radius: 5px;
+            }
+            #lbl-hob{
+                height: 50px;
             }
            </style>
 </head>
@@ -71,7 +74,7 @@
         <p> 
            <label for="day">DOB</label>
             <select id="day" required>
-                <option> Day</option>
+                <option selected hidden disabled> Day</option>
                 <option> 01</option>
                 <option> 02</option>
                 <option> 03</option>
@@ -105,7 +108,7 @@
                 <option> 31</option>
             </select>
             <select id="mon" required>
-                <option> Month</option>
+                <option selected hidden disabled> Month</option>
                 <option> Janaury</option>
                 <option> Febuary</option>
                 <option> March</option>
@@ -120,7 +123,7 @@
                 <option> December</option>
             </select>
             <select id="year" required>
-                <option> Year</option>
+                <option selected hidden disabled> Year</option>
                 <option> 1990</option>
                 <option> 1991</option>
                 <option> 1992</option>
@@ -139,7 +142,7 @@
 
         <p> 
             <label for="email-id">Email Id</label> 
-            <input type="text" size="20" id="email-id" required>
+            <input type="text" size="20" id="email-id" placeholder="Enter Email Adress" required>
         </p>
         <p> 
             <label for="mobile-number">Mobile Number</label>
@@ -154,30 +157,30 @@
             <input type="radio" name="gender" >
           
         <p>
-            <label for="address" class="lbl"> ADDRESS</label>
-            <textarea id="address" rows="4" cols="35" required></textarea>
+            <label for="address" > ADDRESS</label>
+            <textarea id="address" rows="4" cols="35" required placeholder="Enter Adress"></textarea>
         </p>
        <p>
            <label for="city"> CITY</label>
-           <input type="text" maxlength="30" size="20" id="city" required >
+           <input type="text" maxlength="30" size="20" id="city" required placeholder="Enter City" >
            (max 30 Characters a-z and A-Z)
        </p>
        <p>
             <label for="pin-code"> PIN CODE</label>
-            <input type="text" maxlength="2" size="20" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            <input type="text" maxlength="2" size="20" placeholder="Enter PinCode" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
             (6 Digit Number)
         </p>
         <p>
             <label for="state"> STATE</label>
-            <input type="text" maxlength="30" size="20" id="state" required >
+            <input type="text" maxlength="30" size="20" id="state" required  placeholder="Enter State">
             (max 30 Characters a-z and A-Z)
         </p>
         <p>
             <label for="country"> COUNTRY</label>
-            <input type="text" maxlength="30" size="20" id="country" required >
+            <input type="text" maxlength="30" size="20" id="country" required  placeholder="Enter Country">
         </p>
         <p >
-            <label for="hobbies"> HOBBIES</label>
+            <label for="hobbies" id="lbl-hob"> HOBBIES</label>
             <div id="hobbies">
             <input type="checkbox" id="hobbies" name="hobbies1" >
              <b> Drawing</b> 
@@ -187,7 +190,7 @@
             <b>Dancing</b>
             <input type="checkbox" id="hobbies" name="hobbies4" >
             <b>Sketching</b><br>
-            <label for="hobbies">.</label>
+           
             <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies5" >
             <b>Others</b>
             <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies6" >
