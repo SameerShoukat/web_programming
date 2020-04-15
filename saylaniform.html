@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         html{
-            font-family: Arial;
+            font-family:sans-serif;
             scroll-behavior: smooth;
         }
         /*Head*/
@@ -20,20 +20,33 @@
         }
         /*Form*/
         form{
-            background-color: #8803fc;
-            padding: 10px;
+            padding: 20px;
             color: white;
-            height: auto;
+            background-color:#8803fc ;
+            height: 800px;
             }
-           label{
+        label{
             width:150px;
             display: inline-block;
             float: left;
             }
-            #btns{
-                float: left;
-                margin-left: 400px;
-
+        #btns{
+            float: left;
+            margin-left: 300px;
+            background-color:#8803fc ;
+            }
+            button{
+                background-color: white;
+                border: none;
+                color: #8803fc ;
+                padding: 10px 22px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 5px;
             }
            </style>
 </head>
@@ -43,14 +56,16 @@
         <h1> STUDENT REGISTRATION FORM</h1>
     </Div>
     <form action="" method="POST">
-        <Div id="main">
+       <div id="main">
         <p> 
             <label for="first-name">FIRST NAME</label> 
-            <input type="text" maxlength="30" size="15" id="first-name" placeholder=" Enter First Name" required>
+            <input type="text" maxlength="30" size="20" id="first-name" placeholder=" Enter First Name" required>
+            (max 30 Characters a-z and A-Z)
         </p>
         <p> 
             <label for="last-name">LAST NAME</label> 
-            <input type="text" maxlength="30" size="15" id="last-name" placeholder=" Enter Last Name" required >
+            <input type="text" maxlength="30" size="20" id="last-name" placeholder=" Enter Last Name" required >
+            (max 30 Characters a-z and A-Z)
         </p>
 
         <p> 
@@ -124,11 +139,12 @@
 
         <p> 
             <label for="email-id">Email Id</label> 
-            <input type="text" size="15" id="email-id" >
+            <input type="text" size="20" id="email-id" required>
         </p>
         <p> 
             <label for="mobile-number">Mobile Number</label>
-            <input type="text" size="15" id="mobile-number" maxlength="10" >
+            <input type="text" maxlength="10" id="mobile-number" size="20" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+            (10 Digit Number)
         </p>
         <p> 
             <label for="gender">Gender</label>
@@ -139,41 +155,43 @@
           
         <p>
             <label for="address" class="lbl"> ADDRESS</label>
-            <textarea id="address"></textarea>
+            <textarea id="address" rows="4" cols="35" required></textarea>
         </p>
        <p>
            <label for="city"> CITY</label>
-           <input type="text" maxlength="30" size="15" id="city" required >
-
+           <input type="text" maxlength="30" size="20" id="city" required >
+           (max 30 Characters a-z and A-Z)
        </p>
        <p>
             <label for="pin-code"> PIN CODE</label>
-            <input type="number" maxlength="6" size="15" id="pin-code" required >
+            <input type="text" maxlength="2" size="20" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            (6 Digit Number)
         </p>
         <p>
             <label for="state"> STATE</label>
-            <input type="text" maxlength="30" size="15" id="state" required >
+            <input type="text" maxlength="30" size="20" id="state" required >
+            (max 30 Characters a-z and A-Z)
         </p>
         <p>
             <label for="country"> COUNTRY</label>
-            <input type="text" maxlength="30" size="15" id="country" required >
+            <input type="text" maxlength="30" size="20" id="country" required >
         </p>
         <p >
             <label for="hobbies"> HOBBIES</label>
             <div id="hobbies">
-            <input type="checkbox" id="hobbies" name="hobbies1">
+            <input type="checkbox" id="hobbies" name="hobbies1" >
              <b> Drawing</b> 
-            <input type="checkbox" id="hobbies" name="hobbies2">
+            <input type="checkbox" id="hobbies" name="hobbies2" >
             <b> Sniping </b> 
-            <input type="checkbox" id="hobbies" name="hobbies3">
+            <input type="checkbox" id="hobbies" name="hobbies3" >
             <b>Dancing</b>
-            <input type="checkbox" id="hobbies" name="hobbies4">
+            <input type="checkbox" id="hobbies" name="hobbies4" >
             <b>Sketching</b><br>
             <label for="hobbies">.</label>
-            <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies5">
+            <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies5" >
             <b>Others</b>
-            <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies6">
-            <input type="text" size="15" name="hobbies6">
+            <input type="checkbox" id="hobbies" name="hobbies5" id="hobbies6" >
+            <input type="text" size="15" name="hobbies6" >
         </div>
         </p>
         <p>
@@ -190,30 +208,38 @@
                 <td> 1</td>
                 <td> Class X</td>
                 <td> <input type="text" size="15" maxlength="10"></td>
-                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td>  <input type="text" maxlength="2" size="15" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                 <td> <input type="text" size="15"></td>
             </tr>
             <tr>
                 <td> 2</td>
                 <td> Class XII</td>
                 <td> <input type="text" size="15" maxlength="10"></td>
-                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td>  <input type="text" maxlength="2" size="15" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                 <td> <input type="text" size="15"></td>
             </tr>
             <tr>
                 <td> 3</td>
                 <td> Graduation</td>
                 <td> <input type="text" size="15" maxlength="10"></td>
-                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td>  <input type="text" maxlength="2" size="15" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                 <td> <input type="text" size="15"></td>
             </tr>
             <tr>
                 <td> 2</td>
                 <td> Masters</td>
                 <td> <input type="text" size="15" maxlength="10"></td>
-                <td> <input type="decimal" size="15" maxlength="2"></td>
+                <td>  <input type="text" maxlength="2" size="15" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                 <td> <input type="text" size="15"></td>
             </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td>(10 char max)</td>
+                <td>(upto 2 decimal)</td>
+                <td> </td>
+            </tr>
+
         </table>
         </p>
         <p>
@@ -227,11 +253,13 @@
             <B>BA</B>
             <input type="radio" name="appiled-for">
         </p>
-        <div id="btns">
-            <button type="submit" id="submit"> Submit</button>
-            <button type="submit" id="reset"> Reset</button>
-        </div>
-    </Div>
+        <p id="btns">
+           <button type="submit" id="submit"> Submit</button>
+            <button type="reset" id="reset"> Reset</button>
+        </p>
+       
+    </div>
     </form>
 </body>
 </html>
+
