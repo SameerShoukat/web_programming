@@ -1,0 +1,41 @@
+.cal {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.btn {
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 2px;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px grey;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+#result {
+    height: 50px;
+    margin: 5px 0px;
+    font-size: 20px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 1px 1px teal;
+}
+
+.mybtn {
+    width: 100%;
+    border-radius: 20px;
+}

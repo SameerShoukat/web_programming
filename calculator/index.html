@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <!--<a href="#" onclick="foo('Hello Saylani')"> Click ME</a>
+    <br>
+    <button onclick="clickbtn()"> Button</button>
+
+    <img src="../../../HTML & CSS/Bootstrap/first resposive page/images/2.jpg" width="100" height="100" alt="" onmouseover="alert('Mouse On Image')" onmouseout="alert('Mouse Out')">
+    
+    <input type="text" id="name" onblur="this.style.backgroundColor='green';" onFocus="this.style.backgroundColor='yellow';">
+    <button onclick="getname()">Click</button>
+    <p id="para"></p>-->
+
+    <div class="container-fluid main">
+        <div class="row pading justify-content-center">
+            <div class="col-md-5 text-center cal">
+                <h1>CALCULATOR</h1>
+                <form name="form" class="form-group" id="form">
+                    <input id="result" name="textview">
+                    <button class="mybtn btn-dark" data-toggle="collapse" data-target="#demo">Converters</button>
+                </form>
+                <div id="demo" class="collapse">
+                    <button class="btn btn-dark" onclick='clean()'>Binary</button>
+                    <button class="btn btn-dark" onclick="sin(sin)">Octal</button>
+                    <button class="btn btn-dark" onclick="cos(cos)">Decimal</button>
+                    <button class="btn btn-dark" onclick="tan(tan)">Hexa</button>
+                </div>
+
+
+                <div>
+                    <button class="btn btn-dark" onclick='clean()'>C</button>
+                    <button class="btn btn-dark" onclick="sin(sin)">Sin</button>
+                    <button class="btn btn-dark" onclick="cos(cos)">Cos</button>
+                    <button class="btn btn-dark" onclick="tan(tan)">Tan</button>
+
+                </div>
+
+                <div>
+                    <button class="btn btn-dark" onclick="getnum(7)">7</button>
+                    <button class="btn btn-dark" onclick="getnum(8)">8</button>
+                    <button class="btn btn-dark" onclick="getnum(9)">9</button>
+                    <button class="btn btn-dark" onclick="getnum('*')">X</button>
+                </div>
+                <div>
+                    <button class="btn btn-dark" onclick="getnum(4)">4</button>
+                    <button class="btn btn-dark" onclick="getnum(5)">5</button>
+                    <button class="btn btn-dark" onclick="getnum(6)">6</button>
+                    <button class="btn btn-dark" onclick="getnum('-')">-</button>
+                </div>
+                <div>
+                    <button class="btn btn-dark" onclick="getnum(1)">1</button>
+                    <button class="btn btn-dark" onclick="getnum(2)">2</button>
+                    <button class="btn btn-dark" onclick="getnum(3)">3</button>
+                    <button class="btn btn-dark" onclick="getnum('+')">+</button>
+                </div>
+
+                <div>
+
+                    <button class="btn btn-dark" onclick="getnum(0)">0</button>
+                    <button class="btn btn-dark" onclick="process()">=</button>
+                    <button class="btn btn-dark" onclick="back()"><<</button>
+                    <button class="btn btn-dark" onclick="getnum('.')">.</button>
+                </div>
+                <div>
+                    <button class="btn btn-dark" onclick="squrt()">&#8730</button>
+                    <button class="btn btn-dark" onclick="square()">x&#50</button>
+                    <button class="btn btn-dark" onclick="cos('cos')">Log</button>
+                    <button class="btn btn-dark" onclick="getnum('%')">%</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src=" app.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</html>
