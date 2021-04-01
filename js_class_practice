@@ -1,0 +1,45 @@
+class SomePractice{
+    constructor(giveName,giveAddress,givePhone){
+    this.phone = givePhone
+    this.name = giveName
+    this.address = giveAddress   
+    }
+
+    
+    myFunction () {
+        return `this is my function`
+    }
+     static add (a,b){
+         return a + b;
+     }
+
+
+
+
+}
+
+class SomePractice2 extends SomePractice{
+    constructor(giveName,giveAddress,givePhone,lang,github){
+        super(giveName,giveAddress,givePhone)
+        this.lang = lang
+        this.github = github
+    }
+
+    checkLangauage(){
+        console.log(this)
+        if(this.lang =='javascript'){
+            return 'good'
+        }
+        else {
+            return 'you need to change your language'
+        }
+    }
+
+}
+
+sameer = new SomePractice2('sameer','shah faisal colony karachi', 3002378410 ,'javascript','SameerShoukat');
+
+console.log(sameer)
+console.log(sameer.myFunction())
+console.log(SomePractice.add(4,5))
+console.log(sameer.checkLangauage())
