@@ -1,0 +1,90 @@
+const bookProtos = {
+  getSummary : function(){
+    return `${this.title} is written by ${this.author} in ${this.year}`;
+  },
+  getAge : function(){
+    const age = new Date().getFullYear() - this.year
+    return `book is ${age} year old`
+  }
+}
+//object create
+const book1 = Object.create(bookProtos,{
+ title : {value : "JS dev"},
+ author : {value : "Sameer Shoukat"},
+ year : {value : 2018}
+})
+
+
+class Library{
+  constructor(book, date, taker,){
+    this.book = book
+    this.date = date
+    this.taker = taker
+  }
+
+  getSummary(){
+    return `${this.book} book is taker by ${this.taker} on ${this.date}`
+  }
+  studentDetail(){
+    return  {
+    'name' : this.taker,
+    'class' : this.stdClass,
+    'roll no' : this.rollno
+    }
+    
+  }
+  bookReturn(){
+    this.submit = true
+  }
+  static showLibraryDetail(){
+    return `library in founded by SM yousuf in 1981 it is located in 2nd floor`
+  }
+}
+//getting current date
+const currentDate = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+
+class StudentInfo extends Library{
+  constructor(book,date,taker,stdClass,rollno){
+  super(book,date,taker);
+  this.stdClass = stdClass
+  this.rollno = rollno
+}
+}
+
+const std1 = new StudentInfo('C++ basic',currentDate,'sameer shoukat','bscs-4',18)
+
+std1.bookReturn()
+
+console.log(std1.studentDetail())
+
+
+
+
+
+function ShowSomeData(name,author,year){
+  this.name = name;
+  this.author = author;
+  this.year = year;
+}
+ShowSomeData.prototype.changeNum = function(newYear){
+  this.year = newNum
+  this.updated = true
+}
+
+ShowSomeData.prototype.getSummary=function(){
+  return `${this.name} is written by ${this.author}is ${this.year}`
+}
+
+//magzine constructor
+function Magzine(name,author,year,month){
+  ShowSomeData.call(this, name, author, year)
+  this.month = month;
+}
+
+//inherit prototype
+Magzine.prototype = Object.create(ShowSomeData.prototype)
+
+//instantiate magzine object
+const mag1 = new Magzine('JS','sameer',2018,'jan')
+
+console.log(mag1.getSummary())
